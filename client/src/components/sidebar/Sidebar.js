@@ -2,6 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./Sidebar.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import {
+    BsFacebook,
+    BsInstagram,
+    BsLinkedin,
+    BsPinterest,
+    BsTwitter,
+} from "react-icons/bs";
 const Sidebar = () => {
     const [cat, setCat] = useState([]);
 
@@ -40,10 +47,11 @@ const Sidebar = () => {
             <div className="sidebarItem">
                 <span className="sidebarTitle">FOLLOW US</span>
                 <div className="sidebarSocial">
-                    <i className="sidebarIcon fab fa-square-facebook"></i>
-                    <i className="sidebarIcon fab fa-square-twitter"></i>
-                    <i className="sidebarIcon fab fa-square-pinterest"></i>
-                    <i className="sidebarIcon fab fa-square-instagram"></i>
+                    <BsFacebook className="sidebarIcon fa" />
+                    <BsTwitter className="sidebarIcon tw" />
+                    <BsPinterest className="sidebarIcon pin" />
+                    <BsLinkedin className="sidebarIcon lin" />
+                    <BsInstagram className="sidebarIcon inst" />
                 </div>
             </div>
         </div>

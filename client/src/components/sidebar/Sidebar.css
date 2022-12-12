@@ -59,3 +59,18 @@
     margin-left: 10px;
     cursor: pointer;
 }
+.fa:hover {
+    color: #3b5998;
+}
+.lin:hover {
+    color: #0a66c2;
+}
+.inst:hover {
+    color: #e1306c;
+}
+.pin:hover {
+    color: #c8232c;
+}
+.tw:hover {
+    color: #00acee;
+}

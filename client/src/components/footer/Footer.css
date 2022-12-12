@@ -1,0 +1,33 @@
+.footer {
+    /* clear: both;
+    position: bottom;
+    height: 200px;
+    margin-top: -200px; */
+    bottom: 0 !important;
+}
+.footer_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(236, 229, 229);
+    color: black;
+}
+.footer_quicklink ul li {
+    list-style: none;
+    font-size: 20px;
+}
+.footer_link {
+    text-decoration: none;
+    color: rgb(94, 89, 89);
+}
+.footer_link:hover {
+    text-decoration: underline;
+    color: black;
+}
+.blog {
+}
+.tags {
+}
+.categories {
+}
