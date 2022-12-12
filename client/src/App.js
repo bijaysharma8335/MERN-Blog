@@ -8,6 +8,7 @@ import Login from "./pages/login/Login";
 import Settings from "./pages/settings/Settings";
 import Write from "./pages/Write/Write";
 import Single from "./pages/single/Single";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
     const { user } = useContext(Context);
@@ -30,6 +31,7 @@ const App = () => {
                     element={user ? <Write /> : <Register />}
                 />
                 <Route path="/post/:postId" element={<Single />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
     );

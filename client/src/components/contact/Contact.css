@@ -1,0 +1,121 @@
+.contact_container {
+    flex: 3;
+    height: fit-content;
+    margin: 20px;
+    padding-bottom: 30px;
+    background-color: rgb(247, 243, 238);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 80vw;
+    /* background-color: white; */
+}
+.container > h2 {
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    text-align: left;
+    margin-top: 20px;
+}
+.contact_left {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 5px;
+    background-color: white;
+    border: 1px solid rgb(211, 204, 204);
+    padding: 20px;
+    height: 36vh;
+}
+.contact_left > p {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+.contact_left > h3 {
+    margin: 10px 0;
+}
+.contact_right {
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(211, 204, 204);
+    padding: 10px;
+    margin-left: 5px;
+}
+.contact_inputs {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.contact_input {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.5rem !important;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin: 10px 10px;
+}
+.contact_title {
+    margin: 10px 10px;
+    width: 79vw;
+    padding: 10px;
+
+    background-color: white;
+    border: 1px solid #ced4da;
+}
+
+.btn {
+    background: Red;
+    color: white;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 20px;
+    outline: none;
+    border: none;
+    margin: 0 10px;
+}
+.btn:hover {
+    background-color: rgb(209, 49, 49);
+}
+.contact_email-outerdiv {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact_email-innerdiv {
+    display: flex;
+    flex-direction: column;
+}
+.contact_email-innerdiv > span {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c757d;
+}
+.contact_email-innerdiv > h5 {
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact_contactAddress {
+    display: flex;
+    flex-direction: column;
+}
