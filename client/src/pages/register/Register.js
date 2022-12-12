@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Register.css";
 import axios from "axios";
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 
 const Register = () => {
     const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(false);
+    const [passwordVisible, setPasswordVisible] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -45,13 +47,27 @@ const Register = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <label>Password</label>
-                <input
-                    type="password"
-                    placeholder="Enter your password...."
-                    className="registerInput"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                />
+
+                <div className="password-show">
+                    <div
+                        className="password_icon"
+                        onClick={() => setPasswordVisible(!passwordVisible)}
+                    >
+                        {passwordVisible ? (
+                            <AiFillEye />
+                        ) : (
+                            <AiFillEyeInvisible />
+                        )}
+                    </div>
+                    <input
+                        type={passwordVisible ? "text" : "password"}
+                        placeholder="Enter your password...."
+                        className="registerInput"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                    />
+                </div>
+
                 <button className="registerButton" type="submit">
                     Register
                 </button>

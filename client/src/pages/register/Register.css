@@ -8,9 +8,10 @@
             rgba(255, 255, 255, 0.5),
             rgba(255, 255, 255, 0.5)
         ),
-        url("https://ashisheditz.com/wp-content/uploads/2021/11/1636215288180-01-scaled.jpeg");
+        url("https://img.freepik.com/premium-photo/four-wooden-blocks-with-letters-blog-bright-surface-gray-table-business-concept_384017-3526.jpg?w=2000");
 
     background-size: cover;
+    opacity: 1;
 }
 .registerTitle {
     font-size: 50px;
@@ -27,6 +28,8 @@
     padding: 10px;
     background-color: white;
     border: none;
+    padding: 10px;
+    /* text-align: center; */
 }
 .registerButton {
     margin-top: 20px;
@@ -47,4 +50,14 @@
     padding: 10px;
     color: white;
     border-radius: 10px;
+}
+.password-show {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.password_icon {
+    margin-top: 10px;
+    position: absolute;
+    margin-right: 10px;
 }

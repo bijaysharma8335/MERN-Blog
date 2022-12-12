@@ -21,7 +21,6 @@ const Contact = () => {
                         dicta.
                     </p>
                     <div className="contact_contactAddress">
-                       
                         <div className="contact_email-outerdiv">
                             <MdEmail
                                 size="2em"
